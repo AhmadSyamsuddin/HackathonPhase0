@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>🧮Quiz Matematika Sederhana 🧮</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>🧮 Quiz Matematika Sederhana! 🧮</h1>
+      <h4>Peraturan:</h4>
+      <ol>
+        <li>Pemain akan diberikan waktu <strong>90/60/30 detik</strong> untuk menjawab setiap soal, sesuai dengan level yang dipilih.</li>
+        <li>Setiap soal yang benar skor akan <strong>ditambah 1</strong></li>
+        <li>Setiap soal yang salah skor akan <strong>dikurangi 1</strong></li>
+      </ol>
+      <p>Level: 
+        <select id="level">
+          <option value="mudah">Mudah</option>
+          <option value="sedang">Sedang</option>
+          <option value="sulit">Sulit</option>
+        </select>
+      </p>
+      <p id="question">Klik tombol Start untuk Memulai permainan!</p> <span id="noSoal">0/0</span><br>
+      <input type="number" id="answer" placeholder="Masukkan jawaban" /> 
+      <button id="submitBtn">Cek Jawaban</button>
+      <button id="startBtn">Start</button>
+      <br>
+      <p id="score">Skor: 0</p>
+      <p id="highScore">High Score : 0</p>
+      <br>
+      <p id="timer">Timer : --</p>
+      <p id="feedback"></p>
+      <h2>Riwayat Jawaban:</h2>
+      <ul id="history"></ul>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
